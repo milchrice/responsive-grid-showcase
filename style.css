@@ -4,3 +4,126 @@
     padding: 0;
 }
 
+body {
+    background-color: #E5B6AC;
+}
+
+/* ---------------------------------------- NAV ----------------------------------------*/
+nav {
+    height: 80px;
+    background-color: #FFFFFF;
+    /* opacity: 0.5; */
+}
+
+/* ---------------------------------------- first-view (INDEX) ----------------------------------------*/
+.first-view {
+    position: relative; 
+    margin: 0;
+}
+
+.hero {
+    height: 800px;
+    width: 100%;
+    object-fit:cover;
+}
+
+#message {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 25%;
+    text-align: right;
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+/* ---------------------------------------- new-items / concept (INDEX) ----------------------------------------*/
+#new-items {
+    display: flex;
+}
+
+#concept {
+    display: flex;
+}
+
+.info {
+    position: relative;
+    width: 50%;
+    height: 720px;
+    background-color: #AD4F4D;
+}
+
+.info-box {
+    width: 50%;
+    position: absolute; /* This <h1> is positioned relative to <div class="hero">*/
+    top: 50%;  /* move the top corner of the element to the center of its parent */
+    left: 50%; /* move the left corner of the element to the center of its parent */
+    transform: translate(-50%, -50%); /* move the center of the element to the center of its parent */
+
+}
+
+.info-box h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 20px auto;
+}
+
+.info-box h2 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    color: #FFFFFF;
+    margin: 20px auto;
+}
+
+.info-box p {
+    text-align: center;
+    color: #FFFFFF;
+    margin: 20px auto;
+}
+
+.button {
+    background-color: #AD4F4D; 
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    width: 40%;
+    margin: 20px auto;
+
+}
+
+.button:hover {
+    background-color: #FFFFFF;
+    color: #AD4F4D;
+}
+
+.image {
+    width: 50%;
+    height: 720px;
+    position: relative;
+    caret-color: #E5B6AC;
+}
+
+.image img {
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+    position: absolute; /* This <h1> is positioned relative to <div class="hero">*/
+    top: 50%;  /* move the top corner of the element to the center of its parent */
+    left: 50%; /* move the left corner of the element to the center of its parent */
+    transform: translate(-50%, -50%); /* move the center of the element to the center of its parent */
+}
+
+/* ---------------------------------------- FOOTER ----------------------------------------*/
+footer {
+    height: 300px;
+    background-color: #FFFFFF;
+}
