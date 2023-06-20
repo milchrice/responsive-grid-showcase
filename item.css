@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #AD4F4D;
+}
+
+/* ---------------------------------------- top (main) ----------------------------------------*/
+#top {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------------------- h1 (main/section) ----------------------------------------*/
+h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin: 20px auto;
+}
+
+/* ---------------------------------------- lipsticks (main/section) ----------------------------------------*/
+.lipsticks {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+    margin: 50px 50px;
+}
+
+.lipsticks img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-height: 100%;
+}
+
+.lip-item {
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.lip1 {
+grid-column: 1 / 2;
+grid-row: 1 / 2;
+}
+
+.lip4 {
+grid-column: 3 / 4;
+grid-row: 1 / 3 ;
+}
+
+/* ---------------------------------------- skincare (main/section) ----------------------------------------*/
+.skincare {
+    display: grid;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.skin-item {
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+}
+
+.skin1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.skin6 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+}
