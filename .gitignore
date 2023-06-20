@@ -1,0 +1,12 @@
+.DS_Store
+.env
+*.log
+
+.cache/
+
+/build
+/dist
+
+/test
+/testing
+/coverage
