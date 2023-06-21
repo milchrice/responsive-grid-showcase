@@ -10,10 +10,29 @@ body {
 
 /* ---------------------------------------- NAV ----------------------------------------*/
 nav {
-    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #FFFFFF;
-    /* opacity: 0.5; */
 }
+
+/* ---------------------------------------- nav-li (NAV) ----------------------------------------*/
+.nav-li ul {
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav-li li {
+    display: inline;
+    margin: 20px;
+}
+
+.nav-li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+}
+
 
 /* ---------------------------------------- first-view (INDEX) ----------------------------------------*/
 .first-view {
@@ -124,6 +143,25 @@ nav {
 
 /* ---------------------------------------- FOOTER ----------------------------------------*/
 footer {
-    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #FFFFFF;
+}
+
+.footer-li ul {
+    list-style: none;
+    overflow: hidden;
+    margin: 50px;
+}
+
+.footer-li li {
+    display: inline;
+    margin: 20px;
+}
+
+.footer-li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
 }
