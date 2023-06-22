@@ -1,1 +1,1 @@
-# responsive-grid-showcase
+This project is about a cosme product page, it is made with 4 pages and these are Home, Item, Staff and Testimonial. This is our fourth assignment in the course web development. Team members Saki and Sachika.
