@@ -1,0 +1,88 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+/* Cherry blossom photo header */
+.header img {
+  width: 100%; 
+  height: auto;
+}
+
+.header {
+  margin-bottom: 0;
+}
+
+/* description of About us */
+.introduction {
+  margin-bottom: 30px;
+}
+
+
+/* iamges and descriotion of staff */
+.staffimages {
+  width: 80%;
+  height: auto;
+}
+
+
+.staff {
+  background-color: #937B69;
+  color: aliceblue;
+  font-family: 'Cherry Swash', cursive;
+  margin-top: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  row-gap: 10px;
+  column-gap: 5px;
+  grid-gap: 10px;  
+  margin-left: 20px;
+}
+
+.grid-item {
+  display: block;
+}
+
+.grid-item img {
+  width: 80%; 
+  height: auto;
+}
+
+
+/* Set the size of each device. */
+/* mobile size */
+@media screen and (max-width: 480px) {
+  .grid-container {
+  grid-template-columns:1fr;
+  text-align: center;}
+
+  .staff {
+    text-align: center;
+  }
+}
+  
+/* tablet size */
+@media screen and (max-width: 1024px) {
+  
+  .grid-container {
+  grid-template-columns:1fr 1fr;
+  text-align: center;}
+
+  .staff {
+    text-align: center;
+  }
+
+  }
+
+/* tablet horizontal size */
+@media (orientation: landscape) {
+  .review {
+    grid-template-columns:1fr 1fr;
+    text-align: center;
+  }
+
+}
+ 
