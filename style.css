@@ -8,15 +8,20 @@ body {
     background-color: #E5B6AC;
 }
 
-/* ---------------------------------------- NAV ----------------------------------------*/
+/* ------------------------ For Mobile ------------------------ */
+/* --------------- NAV ---------------*/
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFFFFF;
+    background-color: rgba(255,247,247,0.5);
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /* specifies the stack order of an element */
 }
 
-/* ---------------------------------------- nav-li (NAV) ----------------------------------------*/
 .nav-li ul {
     list-style: none;
     overflow: hidden;
@@ -33,66 +38,57 @@ nav {
     font-weight: 700;
 }
 
-
-/* ---------------------------------------- first-view (INDEX) ----------------------------------------*/
+/* --------------- first-view (MAIN) ---------------*/
 .first-view {
     position: relative; 
     margin: 0;
 }
 
 .hero {
-    height: 800px;
+    height: 300px;
     width: 100%;
     object-fit:cover;
 }
 
 #message {
     position: absolute;
-    top: 30%;
+    top: 10%;
     right: 10%;
-    width: 25%;
+    width: 15%;
     text-align: right;
-    font-size: 48px;
-    font-weight: 900;
+    font-size: 24px;
+    font-weight: 600;
     color: #FFFFFF;
 }
 
-/* ---------------------------------------- new-items / concept (INDEX) ----------------------------------------*/
-#new-items {
-    display: flex;
-}
-
-#concept {
-    display: flex;
-}
+/* ------------- new-items / concept (MAIN) ---------------*/
 
 .info {
     position: relative;
-    width: 50%;
-    height: 720px;
+    height: 300px;
     background-color: #AD4F4D;
 }
 
 .info-box {
-    width: 50%;
-    position: absolute; /* This <h1> is positioned relative to <div class="hero">*/
-    top: 50%;  /* move the top corner of the element to the center of its parent */
-    left: 50%; /* move the left corner of the element to the center of its parent */
-    transform: translate(-50%, -50%); /* move the center of the element to the center of its parent */
+    width: 90%;
+    position: absolute; 
+    top: 50%;  
+    left: 50%;
+    transform: translate(-50%, -50%); 
 
 }
 
 .info-box h1 {
     text-align: center;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 400;
     color: #FFFFFF;
     margin: 20px auto;
 }
 
 .info-box h2 {
     text-align: center;
-    font-size: 32px;
+    font-size: 20px;
     font-weight: 300;
     color: #FFFFFF;
     margin: 20px auto;
@@ -109,14 +105,13 @@ nav {
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     color: white;
-    padding: 15px 25px;
+    padding: 5px 10px;
     text-align: center;
     text-decoration: none;
     display: block;
     font-size: 16px;
-    width: 40%;
+    width: 50%;
     margin: 20px auto;
-
 }
 
 .button:hover {
@@ -125,43 +120,241 @@ nav {
 }
 
 .image {
-    width: 50%;
-    height: 720px;
+    height: 300px;
     position: relative;
     caret-color: #E5B6AC;
 }
 
 .image img {
-    width: 50%;
-    height: 70%;
+    width: 70%;
+    height: 90%;
     object-fit: cover;
-    position: absolute; /* This <h1> is positioned relative to <div class="hero">*/
-    top: 50%;  /* move the top corner of the element to the center of its parent */
-    left: 50%; /* move the left corner of the element to the center of its parent */
-    transform: translate(-50%, -50%); /* move the center of the element to the center of its parent */
+    position: absolute; 
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 }
 
-/* ---------------------------------------- FOOTER ----------------------------------------*/
+/* --------------- FOOTER ----------------*/
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #FFFFFF;
+    text-align: center;
+    background-color: #fff7f7;
 }
 
 .footer-li ul {
+    display: flex;
+    flex-direction: column;
     list-style: none;
     overflow: hidden;
-    margin: 50px;
 }
 
 .footer-li li {
     display: inline;
-    margin: 20px;
+    margin: 10px;
 }
 
 .footer-li a{
     text-decoration: none;
     color: #000;
     font-weight: 700;
+}
+
+
+
+
+
+/* ---------------------------- For Tablet ---------------------------- */
+@media (min-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hero {
+        height: 400px;
+        width: 100%;
+        object-fit:cover;
+    }
+    
+    #message {
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        width: 20%;
+        text-align: right;
+        font-size: 36px;
+        font-weight: 800;
+        color: #FFFFFF;
+    }
+
+    #new-items {
+        display: flex;
+    }
+    
+    #concept {
+        display: flex;
+    }
+
+    .info {
+        position: relative;
+        width: 50%;
+        height: 450px;
+        background-color: #AD4F4D;
+    }
+
+    .info-box {
+        width: 50%;
+        position: absolute; 
+        top: 50%;  
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    
+    .info-box h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 500;
+        color: #FFFFFF;
+        margin: 20px auto;
+    }
+
+    .info-box h2 {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin: 20px auto;
+    }
+
+    .button {
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .image {
+        width: 50%;
+        height: 450px;
+        position: relative;
+        caret-color: #E5B6AC;
+    }
+
+    .image img {
+        width: 50%;
+        height: 70%;
+        object-fit: cover;
+        position: absolute; 
+        top: 50%;  
+        left: 50%; 
+        transform: translate(-50%, -50%); 
+    }
+
+    .footer-li ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        overflow: hidden;
+    }
+    
+    .footer-li li {
+        display: inline;
+        margin: 50px;
+    }
+    
+    .footer-li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+    }
+}
+
+
+
+
+
+/* ------------------------ For Desktop ------------------------ */
+@media (min-width: 800px) {
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .hero {
+        height: 800px;
+        width: 100%;
+        object-fit:cover;
+    }
+    
+    #message {
+        position: absolute;
+        top: 30%;
+        right: 5%;
+        width: 25%;
+        text-align: right;
+        font-size: 48px;
+        font-weight: 900;
+        color: #FFFFFF;
+    }
+
+    .info {
+        position: relative;
+        width: 50%;
+        height: 720px;
+        background-color: #AD4F4D;
+    }
+
+    .info-box h1 {
+        text-align: center;
+        font-size: 48px;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin: 20px auto;
+    }
+
+    .info-box h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 500;
+        color: #FFFFFF;
+        margin: 20px auto;
+    }
+
+    .button {
+        padding: 15px 25px;
+        font-size: 16px;
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .image {
+        width: 50%;
+        height: 720px;
+        position: relative;
+        caret-color: #E5B6AC;
+    }
+
+    .footer-li ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        overflow: hidden;
+    }
+    
+    .footer-li li {
+        display: inline;
+        margin: 50px;
+    }
+    
+    .footer-li a{
+        text-decoration: none;
+        color: #000;
+        font-weight: 700;
+    }
 }
